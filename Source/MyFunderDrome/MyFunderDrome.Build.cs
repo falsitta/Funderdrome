@@ -6,7 +6,7 @@ public class MyFunderDrome : ModuleRules
 {
 	public MyFunderDrome(TargetInfo Target)
 	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "RHI", "RenderCore", "ShaderCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "RHI", "RenderCore", "ShaderCore", "PhysX", "APEX" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
