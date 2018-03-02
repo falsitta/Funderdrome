@@ -5,21 +5,14 @@ using System.Collections.Generic;
 
 public class MyFunderDromeEditorTarget : TargetRules
 {
-	public MyFunderDromeEditorTarget(TargetInfo Target)
+	public MyFunderDromeEditorTarget(TargetInfo Target) : base (Target)
 	{
 		Type = TargetType.Editor;
+        ExtraModuleNames.Add("MyFunderDrome");
 	}
 
 	//
 	// TargetRules interface.
 	//
-
-	public override void SetupBinaries(
-		TargetInfo Target,
-		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
-		ref List<string> OutExtraModuleNames
-		)
-	{
-		OutExtraModuleNames.AddRange( new string[] { "MyFunderDrome" } );
-	}
+    
 }

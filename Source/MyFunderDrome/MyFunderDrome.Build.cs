@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class MyFunderDrome : ModuleRules
 {
-	public MyFunderDrome(TargetInfo Target)
+	public MyFunderDrome(ReadOnlyTargetRules Target) : base (Target)
 	{
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "RHI", "RenderCore", "ShaderCore", "PhysX", "APEX" });
 
