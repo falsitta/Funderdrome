@@ -144,10 +144,6 @@
 			"Enabled": false
 		},
 		{
-			"Name": "FMODStudio",
-			"Enabled": true
-		},
-		{
 			"Name": "Niagara",
 			"Enabled": true
 		},
